@@ -9,7 +9,6 @@ void main(){
         useMaterial3: false,
       ),
       home: const FigmaHomePage(),
-      // home: const HomePage(),
     ),
   );
 }

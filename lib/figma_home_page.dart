@@ -346,10 +346,10 @@ class _FigmaHomePageState extends State<FigmaHomePage> {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
             image: DecorationImage(
-                image: Image.network(
-                        "https://media.istockphoto.com/id/1372399516/vector/dark-blue-defocused-blurred-motion-gradient-soft-abstract-background-vector.jpg?s=612x612&w=0&k=20&c=ulLw1_awuztJ1ujhXSBAjQpI4L5PHuF-RE01zlAQHZ0=")
-                    .image,
-                // image: Image.asset("assets/images/3166609.jpg").image,
+                // image: Image.network(
+                //         "https://media.istockphoto.com/id/1372399516/vector/dark-blue-defocused-blurred-motion-gradient-soft-abstract-background-vector.jpg?s=612x612&w=0&k=20&c=ulLw1_awuztJ1ujhXSBAjQpI4L5PHuF-RE01zlAQHZ0=")
+                //     .image,
+                image: Image.asset("assets/images/card_img.jpg").image,
                 fit: BoxFit.fill),
             boxShadow: [
               BoxShadow(
