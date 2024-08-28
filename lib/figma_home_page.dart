@@ -318,16 +318,6 @@ class _FigmaHomePageState extends State<FigmaHomePage> {
     ]);
   }
 
-  //lowerCamelCase
-  // e.g; myName, cardView 
-  // variable names, function names
-  //upperCamelCase
-  // e.g; MyHomePage, Animal
-  // class and objects
-  //lowerSnakeCase
-  // e.g. home_page, data_controller, api_service
-  // file and folder names
-
   Widget cardView() {
     return Column(
       children: [

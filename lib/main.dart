@@ -12,7 +12,7 @@ void main(){
       ),
       // home: const FigmaHomePage(),
       // home: const BinanceHomePage(),
-      home: const MainPage(),
+      home: const MainPage(), ///Bottom Navigation Bar
     ),
   );
 }

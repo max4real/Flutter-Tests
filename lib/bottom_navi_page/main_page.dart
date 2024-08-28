@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test_one/bottom_navi_page/history_page.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_test_one/bottom_navi_page/home_page.dart';
 import 'package:flutter_test_one/bottom_navi_page/noti_page.dart';
 import 'package:flutter_test_one/bottom_navi_page/profile_page.dart';
@@ -17,17 +17,16 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor:
-            const Color.fromARGB(255, 85, 94, 228).withOpacity(0.5),
-        title: const Text("Main Page"),
-      ),
+      // appBar: AppBar(
+      //   backgroundColor:
+      //       const Color.fromARGB(255, 85, 94, 228).withOpacity(0.5),
+      //   title: const Text("Main Page"),
+      // ),
       body: Column(
-        // mainAxisAlignment: MainAxisAlignment.end,
         children: [
           Expanded(
             child: Container(
-              child: shonePage(),
+              child: shownePage(),
             ),
           ),
           Container(
@@ -43,57 +42,59 @@ class _MainPageState extends State<MainPage> {
             child: Row(
               children: [
                 Expanded(
-                    child: TextButton(
-                  onPressed: () {
-                    index = 0;
-                    setState(() {});
-                  },
-                  child: Text(
-                    "Home",
-                    style: TextStyle(
-                        color: (index == 0)
-                            ? const Color.fromARGB(255, 58, 59, 153)
-                            : Colors.black),
-                  ),
-                )),
-                Expanded(
-                  child: TextButton(
-                    onPressed: () {
-                      index = 1;
-                      setState(() {});
-                    },
-                    child: Text("History",
-                        style: TextStyle(
-                            color: (index == 1)
-                                ? const Color.fromARGB(255, 58, 59, 153)
-                                : Colors.black)),
-                  ),
+                  child: IconButton(
+                      onPressed: () {
+                        index = 0;
+                        setState(() {});
+                      },
+                      icon: Icon(
+                        Icons.home_filled,
+                        color: (index == 0) ? Colors.greenAccent : Colors.white,
+                      )),
                 ),
                 Expanded(
-                  child: TextButton(
-                    onPressed: () {
-                      index = 2;
-                      setState(() {});
-                    },
-                    child: Text("Noti",
-                        style: TextStyle(
-                            color: (index == 2)
-                                ? const Color.fromARGB(255, 58, 59, 153)
-                                : Colors.black)),
-                  ),
+                  child: IconButton(
+                      onPressed: () {
+                        index = 1;
+                        setState(() {});
+                      },
+                      icon: Icon(
+                        Icons.history,
+                        color: (index == 1) ? Colors.greenAccent : Colors.white,
+                      )),
                 ),
                 Expanded(
-                  child: TextButton(
-                    onPressed: () {
-                      index = 3;
-                      setState(() {});
-                    },
-                    child: Text("Profile",
-                        style: TextStyle(
-                            color: (index == 3)
-                                ? const Color.fromARGB(255, 58, 59, 153)
-                                : Colors.black)),
-                  ),
+                  child: IconButton(
+                      onPressed: () {
+                        index = 2;
+                        setState(() {});
+                      },
+                      icon: Icon(
+                        Icons.notifications,
+                        color: (index == 2) ? Colors.greenAccent : Colors.white,
+                      )),
+                ),
+                Expanded(
+                  child: IconButton(
+                      onPressed: () {
+                        index = 3;
+                        setState(() {});
+                      },
+                      icon: Icon(
+                        Icons.bar_chart_rounded,
+                        color: (index == 3) ? Colors.greenAccent : Colors.white,
+                      )),
+                ),
+                Expanded(
+                  child: IconButton(
+                      onPressed: () {
+                        index = 4;
+                        setState(() {});
+                      },
+                      icon: Icon(
+                        Icons.person,
+                        color: (index == 4) ? Colors.greenAccent : Colors.white,
+                      )),
                 ),
               ],
             ),
@@ -103,7 +104,7 @@ class _MainPageState extends State<MainPage> {
     );
   }
 
-  Widget shonePage() {
+  Widget shownePage() {
     switch (index) {
       case 0:
         return const HomePage();
