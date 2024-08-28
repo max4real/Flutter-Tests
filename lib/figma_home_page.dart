@@ -35,7 +35,7 @@ class _FigmaHomePageState extends State<FigmaHomePage> {
                       Container(
                         height: 10,
                       ),
-                      card_view(),
+                      cardView(),
                     ],
                   ),
                 ),
@@ -318,7 +318,17 @@ class _FigmaHomePageState extends State<FigmaHomePage> {
     ]);
   }
 
-  Widget card_view() {
+  //lowerCamelCase
+  // e.g; myName, cardView 
+  // variable names, function names
+  //upperCamelCase
+  // e.g; MyHomePage, Animal
+  // class and objects
+  //lowerSnakeCase
+  // e.g. home_page, data_controller, api_service
+  // file and folder names
+
+  Widget cardView() {
     return Column(
       children: [
         card_view_list(title: "Figma Design\nApp", sub: "By max_4_real"),
